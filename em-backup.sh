@@ -1,7 +1,7 @@
 #!/bin/bash
 # Author : ChristopherN - christophercois@me.com
 # XenServer emergency backup script
-
+# Watered down from https://github.com/markround/XenServer-snapshot-backup
 # 1) Looks for SR with label "Snapshot"
 
 
