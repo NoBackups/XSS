@@ -1,0 +1,3 @@
+# Shows all space
+for i in `ls |grep vhd |sed 's/.vhd//g' `;do echo "$(ls -lha $i.vhd |awk '{print $5}') - $i -- $(xe vdi-list uuid=$i |grep name-label |cut -f2 -d :) - $(ls -lha $(vhd-util scan $i.vhd
+ |awk '{print $5}' |cut -f2 -d = |sed 's/.vhd//g').vhd 2>/dev/null |awk '{print $5, $9}')";done
